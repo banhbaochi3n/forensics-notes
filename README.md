@@ -15,6 +15,16 @@ with open("flag-fixed.pdf", "wb") as f:
     f.write(data)
 ```
 
+### Export FTP data
+```shell
+tshark -r file.pcapng --export-objects "ftp-data, ."
+```
+
+### Export data from packets
+```shell
+tshark -r file.pcapng -T fields -e data
+```
+
 ## Memory forensics
 
 
