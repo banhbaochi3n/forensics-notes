@@ -45,3 +45,10 @@ while ($line = $sr.ReadLine()) {
     $line
 }
 ```
+### Apk
+
+Place to look for:
++ /asset
++ /values/public.xml
++ /values/strings.xml
++ /lib
