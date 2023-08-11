@@ -45,6 +45,13 @@ while ($line = $sr.ReadLine()) {
     $line
 }
 ```
+
+### Get logs of ran PowerShell scripts
+
+```PowerShell
+Get-WinEvent -LogName Microsoft-Windows-PowerShell/Operational | % Message > text.txt
+```
+
 ### Apk
 
 Place to look for:
