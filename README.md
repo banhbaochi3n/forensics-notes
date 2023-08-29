@@ -24,6 +24,10 @@ tshark -r file.pcapng --export-objects "ftp-data, ."
 ```shell
 tshark -r file.pcapng -T fields -e data
 ```
+### Extract json data
+```shell
+tshark -r file.pcapng -T fields -e json.value.string -Y json | tr -d '\n ' && echo
+```
 
 ## Memory forensics
 
