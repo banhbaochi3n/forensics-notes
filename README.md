@@ -28,6 +28,10 @@ tshark -r file.pcapng -T fields -e data
 ```shell
 tshark -r file.pcapng -T fields -e json.value.string -Y json | tr -d '\n ' && echo
 ```
+### Extract beacon frame
+```shell
+tshark -i <your interface here> -Y wlan.fc.type_subtype==0x08 -T fields -e wlan.ssid -r sus.pcap
+```
 
 ## Memory forensics
 
